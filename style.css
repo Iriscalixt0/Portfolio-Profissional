@@ -1,0 +1,176 @@
+/* Configuração de Fonte Global e Transição para o Tema */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+	font-family: "Inter", sans-serif;
+	transition: background-color 0.3s, color 0.3s;
+}
+/* Configurações do modo Dark e Light para o corpo */
+.dark body {
+	background-color: #0f172a; /* Slate-900 */
+	color: #f8fafc; /* Slate-50 */
+}
+.light body {
+	background-color: #f1f5f9; /* Slate-100 */
+	color: #1e293b; /* Slate-800 */
+}
+/* Estilização específica para a Linha do Tempo */
+.timeline-item {
+	position: relative;
+}
+.timeline-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: #94a3b8; /* Slate-400 */
+}
+.dark .timeline-item::before {
+	background-color: #475569; /* Slate-600 */
+}
+.timeline-dot {
+	position: absolute;
+	left: -8px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #4338ca;
+	border: 3px solid;
+	border-color: inherit;
+}
+
+/* --- Estilos do Carrossel Giratório --- */
+.projects-track {
+	display: flex;
+	animation: carouselScroll 30s linear infinite; /* Movimento infinito */
+	width: max-content;
+}
+
+.projects-track:hover {
+	animation-play-state: paused; /* Pausa no hover */
+}
+
+.project-card {
+	flex-shrink: 0;
+	width: 320px;
+	margin-right: 2rem;
+}
+
+@keyframes carouselScroll {
+	0% {
+		transform: translateX(0);
+	}
+	/* Move a largura de 3 cards + 3 margens */
+	100% {
+		transform: translateX(calc(-320px * 3 - 2rem * 3));
+	}
+}
+
+/* --- Estilos para Animações de Entrada (Fade/Zoom) --- */
+.animate-fade-in-up {
+	opacity: 0;
+	animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px) scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+/* --- Animação de Sublinhado para a Navbar --- */
+.nav-link {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 2px;
+}
+.nav-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #4338ca; /* primary-dark */
+	transition: width 0.3s ease-out;
+}
+.dark .nav-link::after {
+	background-color: #818cf8; /* primary-light */
+}
+.nav-link:hover::after {
+	width: 100%;
+}
+
+/* --- Efeito 3D Tilt para Depoimentos --- */
+.testimonial-card {
+	transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+	transform-style: preserve-3d;
+}
+.testimonial-card:hover {
+	/* Rotação leve no eixo Y (2 graus) e escala sutil */
+	transform: perspective(1000px) rotateY(2deg) scale(1.01);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+}
+.dark .testimonial-card:hover {
+	box-shadow: 0 10px 30px rgba(129, 140, 248, 0.2); /* Sombra azulada no dark mode */
+}
+
+/* --- High Contrast Mode for Accessibility --- */
+.high-contrast {
+	background-color: black !important;
+	color: yellow !important;
+	--tw-text-opacity: 1 !important;
+}
+.high-contrast * {
+	background-color: black !important;
+	color: yellow !important;
+	border-color: yellow !important;
+	box-shadow: none !important;
+	--tw-shadow: none !important;
+	--tw-bg-opacity: 1 !important;
+	--tw-text-opacity: 1 !important;
+	transition: none !important; /* Desabilita transições para evitar problemas visuais */
+	border-radius: 0 !important; /* Remove arredondamento */
+}
+.high-contrast a,
+.high-contrast button {
+	color: cyan !important;
+	background-color: black !important;
+	border: 1px solid cyan !important;
+	padding: 4px;
+	border-radius: 0 !important;
+	font-weight: bold !important;
+}
+/* Override specific elements like borders and backgrounds */
+.high-contrast .shadow-md,
+.high-contrast .shadow-xl,
+.high-contrast .shadow-2xl,
+.high-contrast .rounded-xl,
+.high-contrast .p-6,
+.high-contrast .p-8 {
+	border: 2px solid yellow !important;
+	border-radius: 0 !important;
+}
+.high-contrast .dark\:bg-slate-800,
+.high-contrast .bg-white,
+.high-contrast .dark\:bg-slate-900\/95,
+.high-contrast .bg-white\/95,
+.high-contrast .bg-slate-100 {
+	background-color: black !important;
+}
+
+.high-contrast .text-primary-dark,
+.high-contrast .text-primary-light {
+	color: cyan !important;
+}
+/* Hide the subtle background patterns */
+.high-contrast .hero-bg-pattern {
+	background-image: none !important;
+}
