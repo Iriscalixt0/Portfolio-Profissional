@@ -1,51 +1,150 @@
-# 👩‍💻 Portfólio de Thamiris Calixto - Desenvolvedora Júnior
+# 👩‍💻 Portfólio Profissional — Íris Calixto
 
-Este é o código-fonte de um portfólio moderno e responsivo, construído com **HTML5**, **Tailwind CSS** e **JavaScript** puro, com um foco especial em **Acessibilidade** (Dark Mode, Alto Contraste, Text-to-Speech).
+### Desenvolvedora Full Stack Júnior
 
-## 🗂️ Estrutura de Arquivos
+<p align="center">
+  <strong>Portfólio moderno, responsivo e acessível</strong><br/>
+  Desenvolvido para apresentar habilidades técnicas, projetos e trajetória profissional.
+</p>
 
-* `index.html`: Estrutura principal do portfólio.
-* `style.css`: Arquivo CSS final, contendo as classes do Tailwind e os estilos de Alto Contraste.
-* `script.js`: Toda a lógica JavaScript, incluindo a manipulação do DOM, Dark Mode, animações e o Assistente Virtual (com lógica de TTS usando a API do Google Gemini).
-* `tailwind.config.js`: Arquivo de configuração do Tailwind CSS (para cores customizadas).
+---
 
-## 🚀 Como Executar Localmente
+## 🌐 Portfólio Online (Produção)
 
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [link do seu repositório]
-    cd [pasta do projeto]
-    ```
+🔗 **Acesse o projeto em produção:**
+👉 [https://SEU-LINK-DO-VERCEL.vercel.app](https://SEU-LINK-DO-VERCEL.vercel.app)
 
-2.  **Abra o `index.html`:**
-    Basta abrir o arquivo `index.html` no seu navegador de preferência.
+> Recomenda-se acessar pelo link acima para visualizar corretamente as animações, o dark mode e todas as interações.
 
-### 🛠️ Configuração Adicional (Para Desenvolvimento)
+---
 
-Se você planeja modificar o código-fonte do Tailwind:
+## ✨ Visão Geral
 
-1.  **Instale o Node.js e o npm.**
-2.  **Instale o Tailwind CSS e o PostCSS:**
-    ```bash
-    npm install -D tailwindcss postcss autoprefixer
-    npx tailwindcss init -p
-    ```
-3.  **Use o `tailwind.config.js`** fornecido neste projeto para a configuração de cores.
-4.  **Execute o Tailwind Watcher:**
-    ```bash
-    npx tailwindcss -i ./src/input.css -o ./style.css --watch
-    ```
-    *(Presume-se que você tenha um arquivo `input.css` na pasta `src/` que contenha as diretivas `@tailwind`)*.
+Este repositório contém o **código-fonte do meu portfólio profissional**, desenvolvido com foco em:
 
-### 🔊 Aviso sobre Text-to-Speech (TTS)
+* Experiência do usuário (UX)
+* Responsividade
+* Acessibilidade
+* Boas práticas de Front-End
+* Código limpo e organizado
 
-O recurso de "Ler Página em Voz Alta (TTS)" utiliza a API do Google Gemini para conversão de texto em áudio de alta qualidade.
+O projeto funciona inteiramente no navegador, sem necessidade de build ou instalação de dependências.
 
-**Para que o TTS funcione, você precisa:**
+---
 
-1.  Obter uma **Chave de API** do Google AI Studio ou Google Cloud.
-2.  Colocar sua chave na constante `API_KEY` dentro do arquivo `script.js`:
-    ```javascript
-    const API_KEY = "SUA_CHAVE_API_AQUI"; // Substitua por sua chave
-    ```
-    *Sem a chave, a funcionalidade de leitura em voz alta resultará em um erro de conexão.*
+## 🖼️ O que você encontrará no portfólio
+
+✔️ Seção de apresentação profissional (Hero)
+✔️ Dark Mode com persistência de preferência
+✔️ Animações suaves ao scroll
+✔️ Carrossel de projetos
+✔️ Linha do tempo acadêmica e profissional
+✔️ Download de currículo em PDF
+✔️ Layout 100% responsivo (mobile-first)
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```bash
+portfolioFull/
+├── .vscode/
+│   └── settings.json
+├── edit5.png
+├── index.html
+├── README.md
+├── script.js
+├── style.css
+├── tailwind.config.js
+└── ThamirisCalixtoDev.pdf
+```
+
+---
+
+## 📄 Descrição dos Arquivos
+
+| Arquivo                  | Descrição                                                       |
+| ------------------------ | --------------------------------------------------------------- |
+| `index.html`             | Estrutura principal do portfólio                                |
+| `style.css`              | Estilos personalizados, animações e complementos ao Tailwind    |
+| `script.js`              | Lógica JS: dark mode, animações, scroll, carrossel e interações |
+| `tailwind.config.js`     | Configurações personalizadas do Tailwind CSS                    |
+| `ThamirisCalixtoDev.pdf` | Currículo disponível para download                              |
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white"/>
+</p>
+
+---
+
+## 🛠️ Funcionalidades Implementadas
+
+* 🌙 Dark Mode com `localStorage`
+* 🎞️ Animações com Intersection Observer
+* 🔁 Rotação dinâmica de títulos profissionais
+* 🧭 Navegação com scroll suave
+* 🎠 Carrossel animado de projetos
+* 📄 Download de currículo em PDF
+* 📱 Design responsivo e acessível
+
+---
+
+## ▶️ Como Executar Localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Iriscalixt0/Portfolio-Profissional.git
+```
+
+2. Acesse a pasta:
+
+```bash
+cd portfolioFull
+```
+
+3. Abra o arquivo:
+
+```bash
+index.html
+```
+
+✔️ Não é necessário instalar dependências
+✔️ Tailwind utilizado via CDN
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este portfólio foi desenvolvido para:
+
+* Consolidar conhecimentos em Front-End
+* Demonstrar domínio de HTML, CSS, JavaScript e Tailwind
+* Servir como vitrine profissional para oportunidades na área de tecnologia
+
+---
+
+## 🤝 Contribuições
+
+Feedbacks e sugestões são bem-vindos.
+Sinta-se à vontade para abrir uma **issue** ou um **pull request**.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.
+
+---
+
+### ⭐ Se este projeto te ajudou ou inspirou, deixe uma estrela no repositório!
