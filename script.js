@@ -87,8 +87,7 @@ const textRotator = document.getElementById('text-rotator');
 const texts = [
     "Desenvolvedora Full Stack",
     "Analista de Sistemas",
-    "Desenvolvedora Júnior/Estagiária",
-    "Especialista em Front-end" // Adicione quantos quiser
+    "Desenvolvedora Júnior" // Adicione quantos quiser
 ];
 
 let index = 0;
