@@ -12,7 +12,7 @@
 ## 🌐 Portfólio Online (Produção)
 
 🔗 **Acesse o projeto em produção:**
-👉 [https://SEU-LINK-DO-VERCEL.vercel.app](https://SEU-LINK-DO-VERCEL.vercel.app)
+👉 [https://portfolio-profissional-lyart.vercel.app/](https://portfolio-profissional-lyart.vercel.app/)
 
 > Recomenda-se acessar pelo link acima para visualizar corretamente as animações, o dark mode e todas as interações.
 
